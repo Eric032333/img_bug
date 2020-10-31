@@ -1,113 +1,150 @@
 <template>
-  <div class="port container">
-    <div class="row mt-4">
 
-      <div class="left-group col-lg-5"> 
-
-        <div class="card mb-3 col-lg-12">
-          <div class="row letf-gutters">
-            <div class="left-pic col-md-4">
-              <img src="https://picsum.photos/200" class="card-img" alt="..." style="">
-            </div>
-            <div class="left-words col-md-8">
-              <div class="card-body">
-                <p class="card-title" style="font-size: 1.2rem;">疫苗培養方式</p>
-                <div class='d-flex'>
-                  <p class="sort" style='color:#F2B33D;'>護理</p>
-                  <p class="by-who ml-3" style="color:#6CCDD3;">by Candy</p>
-                </div>
-                <p class="card-text">疫苗培養方式有雞胚胎蛋培養疫苗及細胞培養疫苗兩種，流感疫苗的疫苗株選擇，均依照世界衛生組織建議</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="card mb-3 col-lg-12">
-          <div class="row letf-gutters">
-            <div class="left-pic col-md-4">
-              <img src="https://picsum.photos/200" class="card-img" alt="..." style="">
-            </div>
-            <div class="left-words col-md-8">
-              <div class="card-body">
-                <p class="card-title" style="font-size: 1.2rem;">疫苗培養方式</p>
-                <div class='d-flex'>
-                  <p class="sort" style='color:#F2B33D;'>護理</p>
-                  <p class="by-who ml-3" style="color:#6CCDD3;">by Candy</p>
-                </div>
-                <p class="card-text">疫苗培養方式有雞胚胎蛋培養疫苗及細胞培養疫苗兩種，流感疫苗的疫苗株選擇，均依照世界衛生組織建議</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="card mb-3 col-lg-12">
-          <div class="row letf-gutters">
-            <div class="left-pic col-md-4">
-              <img src="https://picsum.photos/200" class="card-img" alt="..." style="">
-            </div>
-            <div class="left-words col-md-8">
-              <div class="card-body">
-                <p class="card-title" style="font-size: 1.2rem;">疫苗培養方式</p>
-                <div class='d-flex'>
-                  <p class="sort" style='color:#F2B33D;'>護理</p>
-                  <p class="by-who ml-3" style="color:#6CCDD3;">by Candy</p>
-                </div>
-                <p class="card-text">疫苗培養方式有雞胚胎蛋培養疫苗及細胞培養疫苗兩種，流感疫苗的疫苗株選擇，均依照世界衛生組織建議</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div> 
+ <!-- ===========menu============================= -->
+  <div>
+    <ul class="list-group list-group-flush" style="display:none;"> 
+      <li class="list-group-item" @click.prevent="listDisplayBtn">back</li>
+      <li class="list-group-item">Cras justo odio</li>
+      <li class="list-group-item">Dapibus ac facilisis in</li>
+      <li class="list-group-item">Morbi leo risus</li>
+      <li class="list-group-item">Porta ac consectetur ac</li>
+      <li class="list-group-item">Vestibulum at eros</li>
+    </ul>
+ <!-- ===========menu============================= -->
+    <div class="search-use-calss row">
+      <div class="classification" @click.prevent="listDisplayBtn">QA分類</div>
+      <div class="key-word">關鍵字</div>
+    </div>
+    <div class="port container">
+      <div class="row mt-4">
       
-      <div class="right-group col-lg-7"> 
-        <div class="col-md-12 col-lg-12 col-md-10 mb-3">
-          <div class="right card">
-            <div class="card-body d-flex">
-              <div class="media col-sm-9 col-md-8 col-lg-7">
-                <img style="width:50px; height:50px;" src="https://picsum.photos/200" class="align-self-start mr-3 mt-4" alt="...">
-                <div class="media-body">
-                  <p class="date-txt">29,6月2020</p>  
-                  <h5 class="title-line2 mt-0">親子之間的戰爭後宮甄嬛傳</h5>
-                  <p class="sort">未分類</p>
-                  <p class="txt-line2">疫苗培養方式有雞胚胎蛋培養疫苗及細胞培養疫苗兩種，流感疫苗的疫苗株選擇，均依照世界衛生組織建議，具有全球一致性且抗原性相同，其產生的保護效果是一樣的。</p>  
-                  <p class="by-who">by Josh</p>
+        <div class="right-group col-lg-7"> 
+          <div class="col-md-12 col-lg-12 col-md-10 mb-3">
+            <div class="right card">
+              <div class="card-body d-flex">
+                <div class="media col-sm-9 col-md-8 col-lg-7">
+                  <img style="width:50px; height:50px;" src="https://picsum.photos/200" class="align-self-start mr-3 mt-4" alt="...">
+                  <div class="media-body">
+                    <p class="date-txt">29,6月2020</p>  
+                    <h5 class="title-line2 mt-0">親子之間的戰爭後宮甄嬛傳</h5>
+                    <p class="sort">未分類</p>
+                    <p class="txt-line2">疫苗培養方式有雞胚胎蛋培養疫苗及細胞培養疫苗兩種，流感疫苗的疫苗株選擇，均依照世界衛生組織建議，具有全球一致性且抗原性相同，其產生的保護效果是一樣的。</p>  
+                    <p class="by-who">by Josh</p>
+                  </div>
+                </div>
+                <div class="pic col-sm-3 col-md-4 col-lg-5">
+                    <img src="https://picsum.photos/160" alt="">
                 </div>
               </div>
-              <div class="pic col-sm-3 col-md-4 col-lg-5">
-                  <img src="https://picsum.photos/160" alt="">
+            </div>
+          </div>
+
+          <div class="col-md-12 col-lg-12 col-md-10 mb-3">
+            <div class="right card">
+              <div class="card-body d-flex">
+                <div class="media col-sm-9 col-md-8 col-lg-7">
+                  <img style="width:50px; height:50px;" src="https://picsum.photos/200" class="align-self-start mr-3 mt-4" alt="...">
+                  <div class="media-body">
+                    <p class="date-txt">29,6月2020</p>  
+                    <h5 class="title-line2 mt-0">親子之間的戰爭後宮甄嬛傳</h5>
+                    <p class="sort">未分類</p>
+                    <p class="txt-line2">疫苗培養方式有雞胚胎蛋培養疫苗及細胞培養疫苗兩種，流感疫苗的疫苗株選擇，均依照世界衛生組織建議，具有全球一致性且抗原性相同，其產生的保護效果是一樣的。</p>  
+                    <p class="by-who">by Josh</p>
+                  </div>
+                </div>
+                <div class="pic col-sm-3 col-md-4 col-lg-5">
+                    <img src="https://picsum.photos/160" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-12 col-lg-12 col-md-10 mb-3">
+            <div class="right card">
+              <div class="card-body d-flex">
+                <div class="media col-sm-9 col-md-8 col-lg-7">
+                  <img style="width:50px; height:50px;" src="https://picsum.photos/200" class="align-self-start mr-3 mt-4" alt="...">
+                  <div class="media-body">
+                    <p class="date-txt">29,6月2020</p>  
+                    <h5 class="title-line2 mt-0">親子之間的戰爭後宮甄嬛傳</h5>
+                    <p class="sort">未分類</p>
+                    <p class="txt-line2">疫苗培養方式有雞胚胎蛋培養疫苗及細胞培養疫苗兩種，流感疫苗的疫苗株選擇，均依照世界衛生組織建議，具有全球一致性且抗原性相同，其產生的保護效果是一樣的。</p>  
+                    <p class="by-who">by Josh</p>
+                  </div>
+                </div>
+                <div class="pic col-sm-3 col-md-4 col-lg-5">
+                    <img src="https://picsum.photos/160" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-12 col-lg-12 col-md-10 mb-3">
+            <div class="right card">
+              <div class="card-body d-flex">
+                <div class="media col-sm-9 col-md-8 col-lg-7">
+                  <img style="width:50px; height:50px;" src="https://picsum.photos/200" class="align-self-start mr-3 mt-4" alt="...">
+                  <div class="media-body">
+                    <p class="date-txt">29,6月2020</p>  
+                    <h5 class="title-line2 mt-0">親子之間的戰爭後宮甄嬛傳</h5>
+                    <p class="sort">未分類</p>
+                    <p class="txt-line2">疫苗培養方式有雞胚胎蛋培養疫苗及細胞培養疫苗兩種，流感疫苗的疫苗株選擇，均依照世界衛生組織建議，具有全球一致性且抗原性相同，其產生的保護效果是一樣的。</p>  
+                    <p class="by-who">by Josh</p>
+                  </div>
+                </div>
+                <div class="pic col-sm-3 col-md-4 col-lg-5">
+                    <img src="https://picsum.photos/160" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-12 col-lg-12 col-md-10 mb-3">
+            <div class="right card">
+              <div class="card-body d-flex">
+                <div class="media col-sm-9 col-md-8 col-lg-7">
+                  <img style="width:50px; height:50px;" src="https://picsum.photos/200" class="align-self-start mr-3 mt-4" alt="...">
+                  <div class="media-body">
+                    <p class="date-txt">29,6月2020</p>  
+                    <h5 class="title-line2 mt-0">親子之間的戰爭後宮甄嬛傳</h5>
+                    <p class="sort">未分類</p>
+                    <p class="txt-line2">疫苗培養方式有雞胚胎蛋培養疫苗及細胞培養疫苗兩種，流感疫苗的疫苗株選擇，均依照世界衛生組織建議，具有全球一致性且抗原性相同，其產生的保護效果是一樣的。</p>  
+                    <p class="by-who">by Josh</p>
+                  </div>
+                </div>
+                <div class="pic col-sm-3 col-md-4 col-lg-5">
+                    <img src="https://picsum.photos/160" alt="">
+                </div>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="col-md-12 col-lg-12 col-md-10 mb-3">
-          <div class="right card">
-            <div class="card-body d-flex">
-              <div class="media col-sm-9 col-md-8 col-lg-7">
-                <img style="width:50px; height:50px;" src="https://picsum.photos/200" class="align-self-start mr-3 mt-4" alt="...">
-                <div class="media-body">
-                  <p class="date-txt">29,6月2020</p>  
-                  <h5 class="title-line2 mt-0">親子之間的戰爭後宮甄嬛傳</h5>
-                  <p class="sort">未分類</p>
-                  <p class="txt-line2">疫苗培養方式有雞胚胎蛋培養疫苗及細胞培養疫苗兩種，流感疫苗的疫苗株選擇，均依照世界衛生組織建議，具有全球一致性且抗原性相同，其產生的保護效果是一樣的。</p>  
-                  <p class="by-who">by Josh</p>
-                </div>
-              </div>
-              <div class="pic col-sm-3 col-md-4 col-lg-5">
-                  <img src="https://picsum.photos/160" alt="">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>  
+      </div>  
+    </div>
   </div>
 </template>
 
 <script>
+export default {
 
+    data() {
+      return {
+    
+      }
+    },
+    mounted() {
+      
+    },
+    methods: {
+      listDisplayBtn (e){
+        document.querySelector('.list-group-flush').style.display = (document.querySelector('.list-group-flush').style.display == 'none')?'block':'none';
+        e.preventDefault()
+        document.body.style.overflow = (document.body.style.overflow =='hidden')? '':'hidden'
+      },
+    },
+
+  }
 </script>
 
 <style lang="scss" scoped>
@@ -326,4 +363,40 @@
 
 
   }
+
+
+  .search-use-calss {
+    /* justify-content: center; */
+    color: #5D5E60;
+    position: absolute;
+    z-index: 1;
+    top: 48%;
+    left: 25%;
+  }
+  .search-use-calss .classification {
+    padding: 1rem 1.6rem;
+    background-color: #6CCDD3;
+    margin-right: 1rem;
+  }
+  .search-use-calss .key-word {
+    padding: 1rem 1.6rem;
+    background-color: #6CCDD3;
+    margin-right: 1rem;
+  }
+
+// ===========menu=============================
+  .list-group-flush {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 2;
+    background-color: white;
+    .list-group-item {
+      padding:1.5rem 1.25rem;
+    }
+  }
+
+// ===========menu=============================
+  
 </style>
