@@ -1,7 +1,8 @@
 <template>
 
  <!-- ===========menu============================= -->
-  <div>
+  <div class="aa-menu">
+    
     <ul class="list-group list-group-flush" style="display:none;"> 
       <li class="list-group-item" @click.prevent="listDisplayBtn">back</li>
       <li class="list-group-item">Cras justo odio</li>
@@ -21,7 +22,7 @@
         <div class="right-group col-lg-7"> 
           <div class="col-md-12 col-lg-12 col-md-10 mb-3">
             <div class="right card">
-              <div class="card-body d-flex">
+              <div class="card-body d-flex" style="align-items: stretch;">
                 <div class="media col-sm-9 col-md-8 col-lg-7">
                   <img style="width:50px; height:50px;" src="https://picsum.photos/200" class="align-self-start mr-3 mt-4" alt="...">
                   <div class="media-body">
@@ -33,7 +34,7 @@
                   </div>
                 </div>
                 <div class="pic col-sm-3 col-md-4 col-lg-5">
-                    <img src="https://picsum.photos/160" alt="">
+                    <img src="https://picsum.photos/160" alt="" style="height: 100%;object-fit: cover;"> 
                 </div>
               </div>
             </div>
@@ -396,7 +397,9 @@ export default {
       padding:1.5rem 1.25rem;
     }
   }
-
+.aa-menu{
+        
+      }
 // ===========menu=============================
   
 </style>
